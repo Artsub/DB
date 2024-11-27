@@ -1,0 +1,25 @@
+@startuml v19
+entity "СookingСlass" {
+    * СookingСlassID
+    --
+    Subject
+    Duration
+}
+entity "Teacher" {
+    * TeacherID
+    --
+    Name
+    Surname
+    Specialization
+}
+entity "Student" {
+    * StudentID
+    --
+    Name
+    Surname
+    StudyGroup
+    Score
+}
+СookingСlass ||--o{ Teacher
+Student ||--o{ СookingСlass
+@enduml

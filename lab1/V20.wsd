@@ -1,0 +1,25 @@
+@startuml v20
+entity "Appointment" {
+    * AppointmentID
+    --
+    Doctor
+    ServiceType
+    Price
+}
+entity "Client" {
+    * ClientID
+    --
+    Name
+    Surname
+}
+entity "Pet" {
+    * PetID
+    --
+    Name
+    Age
+    Species
+    Breed
+}
+Client ||--o{ Pet
+Pet ||--o{ Appointment
+@enduml
