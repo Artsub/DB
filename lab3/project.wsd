@@ -1,0 +1,56 @@
+@startuml lab3
+entity "Sportsmеn" {
+    * SportsmanID
+    --
+    Name
+    Surname
+    Age
+    SportsСategory
+    SponsorID
+}
+entity "Sports" {
+    * SportID
+    --
+    Sport
+    Category
+}
+entity "Competitions" {
+    * CompetitionID
+    --
+    Name
+    Sport_id
+    Location
+    Date
+    SportsmanID 
+    TeamID
+}
+
+entity "Results"{
+    * ResultID
+    --
+    CompetitionID
+    WinnerTeamID
+    WinnerSportsmanID
+
+}
+
+entity "Teams"{
+    *TeamID
+    --
+    Name
+    SportsmanID
+}
+
+entity "Sponsors"{
+    * SponsorID
+    name
+}
+
+
+
+Competitions }o--o{ Sportsmеn
+Competitions }o--o{ Teams
+Results ||--|| Competitions
+Sponsors}o--o{ Sportsmеn
+Team |o--o{ Sportsmеn
+@enduml
