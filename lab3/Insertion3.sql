@@ -66,9 +66,9 @@ INSERT INTO results (winner_team_id, winner_sportsman_id) VALUES
 -- Таблица competitions
 INSERT INTO competitions (name, sport_id, location, date, result_id) VALUES
 ('Cycling World Championship', 1, 'Berlin', '2024-05-10', 1),
-('International Swimming Cup', 2, 'London', '2024-06-15', 2),
-('Basketball Championship Final', 3, 'New York', '2024-07-01', 3),
-('Tennis Masters', 4, 'Paris', '2024-08-20', 4),
+('International Swimming Cup', 2, 'London', '2024-06-15', 3),
+('Basketball Championship Final', 3, 'New York', '2024-07-01', 4),
+('Tennis Masters', 4, 'Paris', '2024-08-20', 2),
 ('Football World Cup', 5, 'Moscow', '2024-09-10', 5),
 ('Handball World Cup', 6, 'Paris', '2024-10-05', 6),
 ('Volleyball World League', 7, 'Rio de Janeiro', '2024-11-10', 7);
